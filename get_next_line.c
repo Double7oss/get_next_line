@@ -87,7 +87,7 @@ char *ft_read_save(int fd, char *str)
         buff[cut] = '\0';
         str = ft_strjoin(str, buff);
     }
-    //free(buff);
+    free(buff);
     return (str);
 }
 
