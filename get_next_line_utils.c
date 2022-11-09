@@ -17,6 +17,8 @@ size_t ft_strlen(const char *s)
 	int i;
 
 	i = 0;
+	if (!s)
+		return (0);
 	while (s[i])
 	{
 		i++;
@@ -29,6 +31,8 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
+	if (!s)
+		return (0);
 	while (s[i] != '\0')
 	{
 		if (s[i] == (char)c)
@@ -37,7 +41,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (s[i] == (char)c)
 		return ((char *)s + i);
-	return (NULL);
+	return (0);
 }
 char	*ft_strcat(char *dest, const char *src)
 {
@@ -56,12 +60,17 @@ char	*ft_strcat(char *dest, const char *src)
 	return (dest);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	size_t	ls1;
 	size_t	ls2;
 	char	*str;
 
+	if (!s1)
+	{
+		s1 = (char *)malloc(1 * sizeof(char));
+		s1[0] = '\0';
+	}
 	if (s1 == 0 || s2 == 0)
 		return (NULL);
 	ls1 = ft_strlen(s1);

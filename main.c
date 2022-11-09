@@ -3,7 +3,9 @@
 int main()
 {
 	int fd = open("test", O_RDONLY);
-	printf("%s", get_next_line(fd));
-	printf("%s", get_next_line(fd));
-	printf("%s", get_next_line(fd));
+	// char *s = "";
+ 	// printf("%s",ft_read_save(fd, s));
+ 	printf("%s",get_next_line(fd));
+ 	printf("%s",get_next_line(fd));
+ 	// printf("%s",get_next_line(fd));
 }
