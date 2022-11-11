@@ -9,7 +9,7 @@
 /*   Updated: 2022/11/06 18:04:33 by hel-kadd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+ 
 #include "get_next_line.h"
 
 size_t ft_strlen(const char *s)
@@ -81,5 +81,6 @@ char	*ft_strjoin(char *s1, char *s2)
 	str[0] = '\0';
 	str = ft_strcat(str, s1);
 	str = ft_strcat(str, s2);
+	free(s1);
 	return (str);
 }
