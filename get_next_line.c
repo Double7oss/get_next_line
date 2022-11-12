@@ -32,7 +32,7 @@ char *ft_get_line(char *str)
         i++;
     }
     if (str[i] == '\n')
-    {
+    { 
         s[i] = str[i];
         i++;
     }
@@ -82,6 +82,7 @@ char *ft_read_save(int fd, char *str)
         if (cut == -1)
         {
             free(buff);
+            free(str);
             return (NULL);
         }
         buff[cut] = '\0';

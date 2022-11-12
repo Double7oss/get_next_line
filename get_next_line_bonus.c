@@ -6,7 +6,7 @@
 /*   By: hel-kadd <hel-kadd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 17:10:07 by hel-kadd          #+#    #+#             */
-/*   Updated: 2022/11/11 22:42:06 by hel-kadd         ###   ########.fr       */
+/*   Updated: 2022/11/12 18:47:31 by hel-kadd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ char *ft_read_save(int fd, char *str)
         if (cut == -1)
         {
             free(buff);
+            free (str);
             return (NULL);
         }
         buff[cut] = '\0';
