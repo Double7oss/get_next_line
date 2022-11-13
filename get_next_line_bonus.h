@@ -6,17 +6,17 @@
 /*   By: hel-kadd <hel-kadd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 17:11:03 by hel-kadd          #+#    #+#             */
-/*   Updated: 2022/11/12 16:48:14 by hel-kadd         ###   ########.fr       */
+/*   Updated: 2022/11/13 12:44:18 by hel-kadd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_BONUS
-# define GET_NEXT_LINE_BONUS
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <fcntl.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdio.h>
+# include <fcntl.h>
 
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(const char *s, int c);

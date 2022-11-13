@@ -9,12 +9,12 @@
 /*   Updated: 2022/11/06 18:04:33 by hel-kadd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
- 
+
 #include "get_next_line.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (!s)
@@ -43,6 +43,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (0);
 }
+
 char	*ft_strcat(char *dest, const char *src)
 {
 	int	i;

@@ -6,15 +6,15 @@
 /*   By: hel-kadd <hel-kadd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 17:39:07 by hel-kadd          #+#    #+#             */
-/*   Updated: 2022/11/12 18:19:31 by hel-kadd         ###   ########.fr       */
+/*   Updated: 2022/11/13 12:45:32 by hel-kadd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (!s)
@@ -43,6 +43,7 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s + i);
 	return (0);
 }
+
 char	*ft_strcat(char *dest, const char *src)
 {
 	int	i;
